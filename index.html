@@ -4,33 +4,56 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
     <title>Teste</title>
 </head>
+
 <body>
     <div class="main">
+        <header class="header">
+            <nav class="logo">Logo</nav>
+        </header>
+        
 
-        <nav> Logo</nav>
+        <div class="container"> 
 
-        <div class="contend"> 
-
-            <div class="imagens">
-                <img class="img" src="./img/imagem2.jpg" alt="imagem da natureza">
-                <h1>Titulo 1</h1>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in autem ratione provident magni. Repellat veniam quod iste ex? Nemo vitae nisi quidem autem natus mollitia praesentium maxime officiis numquam?</p>
+            <div class="content-row">
+                <img class="img" src="./img/imagem1.jpg" alt="imagem da natureza">
+           
+            <div class="text">
+                    <h1>Titulo 1</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in autem ratione provident magni. Repellat veniam quod iste ex? Nemo vitae nisi quidem autem natus mollitia praesentium maxime officiis numquam?</p>    
             </div>
+            </div>
+              
 
-            <div class="imagens">
-                <img class="img" src="./img/imagem1.jpg" alt="imagem de uma arvore na natureza">
-                <h1>Titulo 1</h1>
-                <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in autem ratione provident magni. Repellat veniam quod iste ex? Nemo vitae nisi quidem autem natus mollitia praesentium maxime officiis numquam?</p>
-
+            <div class="content-row">
+                <img class="img" src="./img/imagem2.jpg" alt="imagem de uma arvore na natureza">
+                <div class="text">
+                    <h2>Subtitulo 2</h1>
+                    <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti in autem ratione provident magni. Repellat veniam quod iste ex? Nemo vitae nisi quidem autem natus mollitia praesentium maxime officiis numquam?</p>    
             </div>
         </div>
 
-        <button>Botão que abre o pop-up</button>
+        </div>
+
+        <button id="openPopup">Botão que abre o pop-up</button>
+
+          <!-- popup  -->
+        <div class="popup" id="popup">
+            <div class="popup-content">
+
+                <h2>Imagem aleatoria</h2>
+
+                <img id=imageAleatoria" src="./img/gat.jpg" alt="">
+
+                <button id="atualizarImagem" > Atualizar imagem</button>
+                <button class="fechar-button"id="fecharPopup">X</button>
+            </div>
+        </div>
 
     </div>
-    <script> </script>
+    <script src="script.js"></script>
 </body>
 </html>
